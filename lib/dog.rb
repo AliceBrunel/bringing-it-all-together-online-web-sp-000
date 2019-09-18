@@ -7,6 +7,9 @@ class Dog
     @breed = breed 
     @id = id
   end
-
+  
+  def self.create_table
+    db.execute("CREATE TABLE dogs ")
+  end
   
 end
