@@ -1,11 +1,11 @@
 class Dog 
 
-  attr_accessor :name, :breed, :id 
+  attr_accessor :id, :name, :breed
   
-  def initialize(name:,breed:, id:nil)
+  def initialize(id:nil, name:, breed:)
+    @id = id
     @name = name 
     @breed = breed 
-    @id = id
   end
   
   def self.create_table
@@ -41,7 +41,11 @@ class Dog
     new_dog.save
   end
   
-  def self.new_from_db 
+  def self.new_from_db(array)
+    id = row(0)
+    name = row(1)
+    breed = row(2)
     
+    self.new(id, name, breed)
   end
 end
