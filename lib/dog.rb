@@ -102,6 +102,5 @@ class Dog
     else
       dog = self.create(dog_data)
     end
-    dog
   end
 end
