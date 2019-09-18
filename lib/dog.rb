@@ -9,7 +9,10 @@ class Dog
   end
   
   def self.create_table
-    db.execute("CREATE TABLE dogs ")
+    db.execute("CREATE TABLE dogs (
+      id INTEGER PRIMARY KEY,
+      name TEXT,
+      breed TEXT")
   end
   
 end
