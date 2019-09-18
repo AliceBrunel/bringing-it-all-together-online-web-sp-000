@@ -102,6 +102,5 @@ class Dog
     else
       find_by_id(dog_data[0])
     end
-    dog
   end
 end
