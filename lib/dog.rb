@@ -100,7 +100,7 @@ class Dog
       dog_data = dog[0]
       dog = self.create(dog_data)
     else
-      dog
+      find_by_id(dog_data[0])
     end
     dog
   end
