@@ -19,7 +19,7 @@ class Dog
     DB[:conn].execute(sql)
   end
   
-  def self.create_table
+  def self.drop_table
     sql = <<-SQL 
     DROP TABLE IF EXISTS dogs
     SQL
