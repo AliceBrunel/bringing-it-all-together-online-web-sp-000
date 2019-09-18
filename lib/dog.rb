@@ -102,6 +102,6 @@ class Dog
     else
       dog = self.create(dog_data)
     end
-    dog.id
+    dog
   end
 end
