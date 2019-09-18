@@ -21,8 +21,7 @@ class Dog
   
   def self.create_table
     sql = <<-SQL 
-    CREATE TABLE dogs
-      )
+    DROP TABLE IF EXISTS dogs
     SQL
     DB[:conn].execute(sql)
   end
